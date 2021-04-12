@@ -45,7 +45,7 @@ services:
       - 2019:2019
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./service1.html:static/index.html
+      - ./service1.html:/static/index.html
 #    build: .
 #    networks:
 #      - internal
@@ -60,7 +60,7 @@ services:
       - 2020:2019
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
-      - ./service2.html:static/index.html
+      - ./service2.html:/static/index.html
 #    build: .
 #    networks:
 #      - internal
